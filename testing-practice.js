@@ -28,4 +28,26 @@ let calculator = {
   },
 };
 
-export { capitalize, reverseString, calculator };
+function caesarCipher(string) {}
+
+function analyzeArray(array) {
+  let average = 0;
+  let min = array[0];
+  let max = array[0];
+  let length = array.length;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] < min) {
+      min = array[i];
+    }
+
+    if (array[i] > max) {
+      max = array[i];
+    }
+
+    average += array[i];
+  }
+  average = average / array.length;
+  return { average: average, min: min, max: max, length: length };
+}
+
+export { capitalize, reverseString, calculator, caesarCipher, analyzeArray };
