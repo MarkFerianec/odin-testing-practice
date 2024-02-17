@@ -13,4 +13,19 @@ function reverseString(string) {
   return newString;
 }
 
-export { capitalize, reverseString };
+let calculator = {
+  add: function (firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+  },
+  subtract: function (firstNumber, secondNumber) {
+    return firstNumber - secondNumber;
+  },
+  divide: function (firstNumber, secondNumber) {
+    return firstNumber / secondNumber;
+  },
+  multiply: function (firstNumber, secondNumber) {
+    return firstNumber * secondNumber;
+  },
+};
+
+export { capitalize, reverseString, calculator };
